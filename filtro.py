@@ -8,6 +8,8 @@ with open('list_browser.txt', 'r') as file:
 
 for site in sites:
     url = site.strip()  # Remove espaços em branco ou caracteres de nova linha
+    if not url.startswith('https://'):
+        url = 'https://' + url  # Adiciona "https://" se não estiver presente
 
     try:
         response = requests.get(url)
