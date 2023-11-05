@@ -9,7 +9,7 @@ with open('seu_arquivo_de_urls.txt', 'r') as file:
 
 # Inicialização do WebDriver do navegador (ex: Chrome)
 driver = webdriver.Chrome()  # Certifique-se de ter o ChromeDriver configurado
-
+options.add_argument("--start-maximized")
 sites_bloqueados_list = []  # Lista para armazenar os sites bloqueados
 
 for site in sites:
