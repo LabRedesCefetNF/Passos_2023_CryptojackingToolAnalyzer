@@ -11,7 +11,7 @@ with open('seu_arquivo_de_urls.txt', 'r') as file:
 options = webdriver.ChromeOptions()
 options.add_extension('/caminho/para/a/extensao/extension_id.crx')  # Substitua o caminho e a ID da extensão
 
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(chrome_options=options)
 sites_bloqueados_list = []  # Lista para armazenar os sites bloqueados
 
 for site in sites:
