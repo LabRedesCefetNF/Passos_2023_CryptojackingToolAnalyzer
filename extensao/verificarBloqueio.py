@@ -1,17 +1,18 @@
 from selenium import webdriver
 
+options = webdriver.ChromeOptions()
+options.add_extension('/home/aluno/trabalho-Seguranca/extensao1/EMIKBBBEBCDFOHONLAIFAFNOANOCNEBL_1_2_18_0.crx') 
+
+driver = webdriver.Chrome(options=options)
+
 # Inicialização do contador
 sites_bloqueados = 0
 
 # Leitura do arquivo com as URLs
-with open('seu_arquivo_de_urls.txt', 'r') as file:
+with open('urls_limpos_unicos.txt', 'r') as file:
     sites = file.readlines()
 
-# Inicialização do WebDriver do navegador (ex: Chrome)
-options = webdriver.ChromeOptions()
-options.add_extension('/caminho/para/a/extensao/extension_id.crx')  # Substitua o caminho e a ID da extensão
 
-driver = webdriver.Chrome(chrome_options=options)
 sites_bloqueados_list = []  # Lista para armazenar os sites bloqueados
 
 for site in sites:
