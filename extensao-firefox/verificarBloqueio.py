@@ -1,10 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
+# Cria um perfil Firefox
+firefox_profile = FirefoxProfile()
+
+# Adiciona a extensão ao perfil
+firefox_profile.add_extension(extension='/caminho/para/a/extensao/EMIKBBBEBCDFOHONLAIFAFNOANOCNEBL_1_2_18_0.xpi')  # Substitua pelo caminho da extensão
+
+# Passa o perfil criado para as opções do Firefox
 options = Options()
-# Adiciona a extensão ao Firefox
-options.add_extension('/caminho/para/a/extensao/EMIKBBBEBCDFOHONLAIFAFNOANOCNEBL_1_2_18_0.xpi')  # Substitua pelo caminho da extensão
+options.profile = firefox_profile
 
+# Inicialização do navegador
 driver = webdriver.Firefox(options=options)
 
 # Inicialização do contador
