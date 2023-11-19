@@ -1,4 +1,8 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
 
 options = webdriver.ChromeOptions()
 options.add_extension('/home/aluno/trabalho-Seguranca/extensao1/EMIKBBBEBCDFOHONLAIFAFNOANOCNEBL_1_2_18_0.crx') 
