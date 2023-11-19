@@ -20,11 +20,15 @@ for site in sites:
 
     try:
         driver.get(url)  # Abre o site no navegador
-        # Verifica se a página contém a mensagem de bloqueio por extensão
-        if "Esta página foi bloqueada por uma extensão" in driver.page_source:
-            sites_bloqueados += 1
-            sites_bloqueados_list.append(url)  # Adiciona o site à lista de sites bloqueados
-            print(f'O site {url} exibe a mensagem de bloqueio por extensão.')
+        # Espera até que o elemento com a mensagem específica seja visível
+        WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located((By.XPATH, '//*[contains(text(), "Esta página foi bloqueada por uma extensão")]'))
+        )
+
+        # Se a execução chegou até aqui, a mensagem foi encontrada
+        sites_bloqueados += 1
+        sites_bloqueados_list.append(url)
+        print(f'O site {url} exibe a mensagem de bloqueio por extensão.')
     except Exception as e:
         print(f'Erro ao acessar o site {url}: {e}')
 
