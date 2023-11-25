@@ -1,0 +1,14 @@
+sudo apt update
+sudo apt install python3
+sudo apt install python3-pip
+pip install selenium
+pip install requests
+
+**Instalar o chrome***
+
+google-chrome --version
+
+**Instalar o chromedriver**
+
+sudo mv chromedriver_linux64 /usr/local/bin/chromedriver
+sudo chmod +x /usr/local/bin/chromedriver

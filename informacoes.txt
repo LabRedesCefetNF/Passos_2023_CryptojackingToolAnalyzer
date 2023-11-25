@@ -1,2 +1,0 @@
-site para instalar a lista de navegadores: https://zerodot1.gitlab.io/CoinBlockerListsWeb/downloads.html
-https://crxextractor.com/
