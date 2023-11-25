@@ -1,2 +1,2 @@
 # trabalho-Seguranca
-Links usados no desenvolvimento do trabalho da disciplina se Segurança e Auditoria de Sistemas
+Arquivos e links usados no desenvolvimento do trabalho: Análise de ferramentas para a identificação de Cryptojacking me páginas web.
