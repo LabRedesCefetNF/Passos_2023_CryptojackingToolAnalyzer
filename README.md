@@ -1,4 +1,4 @@
-# trabalho-Seguranca
+# Trabalho Seguranca e Auditoria
 *Arquivos e links usados no desenvolvimento do trabalho: Análise de ferramentas para a identificação de Cryptojacking me páginas web.*
 
 **culprits.txt:** Lista de URLs infectadas que foram detectadas pelo Dr.Mine
