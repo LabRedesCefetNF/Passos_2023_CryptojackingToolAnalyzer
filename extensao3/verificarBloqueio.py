@@ -13,7 +13,7 @@ driver = webdriver.Chrome(options=options)
 sites_bloqueados = 0
 
 # Leitura do arquivo com as URLs
-with open('urls_limpos_unicos.txt', 'r') as file:
+with open('sites_infectados.txt', 'r') as file:
     sites = file.readlines()
 
 
