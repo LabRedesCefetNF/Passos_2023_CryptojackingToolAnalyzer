@@ -1,5 +1,9 @@
-# Trabalho Seguranca e Auditoria
-*Arquivos e links usados no desenvolvimento do trabalho: Análise de ferramentas para a identificação de Cryptojacking me páginas web.*
+# Identificação de cryptojacking: Uma Análise de ferramentas
+*This study explores the surge in cryptojacking due to the widespread popularity of cryptocurrencies. 
+With a focus on safeguarding users against unauthorized cryptocurrency mining, the article evaluates five browser extension. Moreover, was developed a bot that can analyze infected sites, generating a final list that was then tested with the extensions to compare their performance. Additionally, the study produces an updated list of infected sites by processing URLs from two distinct databases. The bots enable testing with different databases, facilitating the assessment of various protection tools against cryptojacking.*
+
+
+### Descrição dos arquivos:
 
 **culprits.txt:** Lista de URL's infectadas que foram detectadas pelo Dr.Mine.
 
